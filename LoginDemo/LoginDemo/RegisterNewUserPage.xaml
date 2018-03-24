@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LoginDemo.RegisterNewUserPage"
+             Title="Registration">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand"
+                     Padding="15">
+            <Entry Placeholder="Email"
+                   HorizontalOptions="FillAndExpand"
+                   x:Name="txtEmail"/>
+            <Entry Placeholder="Name"
+                   HorizontalOptions="FillAndExpand"
+                   x:Name="txtName"/>
+            <Entry Placeholder="Mobile No"
+                   HorizontalOptions="FillAndExpand"
+                   x:Name="txtMobNo"/>
+            <Entry Placeholder="Password"
+                   IsPassword="True"
+                   HorizontalOptions="FillAndExpand"
+                   x:Name="txtPassword"/>
+            <Entry Placeholder="Confirm Password"
+                   IsPassword="True"
+                   HorizontalOptions="FillAndExpand"
+                   x:Name="txtPasswordConfirm"/>
+            <Button Text="Submit"
+                    HorizontalOptions="CenterAndExpand"
+                    Clicked="SubmitBtnClicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

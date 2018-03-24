@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LoginDemo.Helper;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,7 +14,16 @@ namespace LoginDemo
 		{
 			InitializeComponent();
 
-			MainPage = new LoginDemo.MainPage();
+            if (SharedPref.IsContains(Constants.IsLoginKey) &&
+                SharedPref.LoadApplicationProperty<bool>(Constants.IsLoginKey))
+            {
+                MainPage = new LoginDemo.MainPage();
+            }
+            else
+            {
+                MainPage = new NavigationPage(new LoginPage());
+            }
+
 		}
 
 		protected override void OnStart ()
