@@ -10,8 +10,6 @@ namespace LoginDemo.Helper
 
         public const string IsLoginKey = "IsLoginKey";
 
-        public const string IsCompanyOrgSelectedKey = "IsCompanyOrgSelectedKey";
-
         public const string UserNameKey = "UserNameKey";
 
         public const string EmailKey = "EmailKey";
